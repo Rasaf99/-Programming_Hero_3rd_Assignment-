@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./style.css">
+
+
+
+    <title>Coding Hero</title>
+
+
+
+</head>
+
+
+<body class="font-family-default fs-5">
+    
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg">
+
+        <!-- container < navbar -->
+        <div class="container-fluid px-4 pt-2 pb-1">
+
+
+        
+          <!--  title < container < navbar -->
+          <div><a class="navbar-brand fs-3 font-family-heading fw-semibold text-info" href="#">Coding Hero</a></div>
+          
+          <!--  hamburgerMenu < container < navbar -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+
+
+          <!-- everything-without-title < container < navbar -->
+
+          <!-- 'navbar-collapse' class changes flex-grow's value to 1 which makes 'container-fluid' class's 'justify-content: space-between' stop working. So, we are changing back the flex-grow's value to 0 with 'flex-grow-0'. -->
+          <div class="collapse navbar-collapse flex-grow-0" id="navbarNav">
+            
+           
+            <!-- links < everything-without-title < container -->
+
+            <ul class="navbar-nav">
+
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Home</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">Courses</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">Deals</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">Success</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+
+
+            </ul>
+
+
+            <!-- Register Button < everything-without-title < container -->
+
+
+            <button type="button" class="ms-lg-5 mt-3 mt-lg-0 btn btn-outline-info btn-lg">Register</button>
+
+          </div>   <!-- End: links < container < navbar -->
+
+
+
+
+        </div> <!-- End:container < navbar -->
+
+      </nav> <!-- End: navbar -->
+
+
+
+
+
+    <!-- Bootstrap Javascript -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
