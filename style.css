@@ -51,14 +51,6 @@
 
 
 
-.text-brand{
-   color: #289BDE;
-}
-  
-
-
-
-
 
 
 .carousel-item{
@@ -132,6 +124,28 @@
 
   }
 
+
+
+  /* section-register */
+
+  .section-register {
+    padding: 2rem;
+  }
+  
+
+  @media (min-width:992px) {
+    .section-register{
+        padding: 2rem 10rem;
+        display:grid;
+        grid-template-columns: 4fr 1fr;
+        align-items: center;
+
+      }
+
+    
+  }
+
+  
 
 
 
