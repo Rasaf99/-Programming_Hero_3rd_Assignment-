@@ -50,6 +50,9 @@
 /* for default text (body) = fs-5, for subtitle type of small text = fs-5, opacity-75 , for header title = fs-1, for any other title = fs-3  */
 
 
+.section-margin-top {
+  margin-top:6rem;
+}
 
 
 
@@ -135,9 +138,10 @@
 
   @media (min-width:992px) {
     .section-register{
-        padding: 2rem 10rem;
+        width:72rem;
         display:grid;
-        grid-template-columns: 4fr 1fr;
+        gap:25rem;
+        grid-template-columns: 2fr 1fr;
         align-items: center;
 
       }
@@ -145,7 +149,21 @@
     
   }
 
-  
+
+  /* faq-section */
+  .accordion {
+
+    width: 70%;
+  }
+
+
+  .accordion-button, .accordion-button:not(.collapsed), .accordion-button::after {
+
+    background-color: transparent;
+    color: #092f6b;
+    outline-color: #092f6b;
+}
+
 
 
 
