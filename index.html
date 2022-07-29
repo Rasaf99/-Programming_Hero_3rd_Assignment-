@@ -9,13 +9,25 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
 
+    <!-- Bootstrap Icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+
+    <!-- Google Font -->
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
 
     <!-- CSS -->
     <link rel="stylesheet" href="./style.css">
 
+      <!-- favicon -->
+      <link rel="icon" type="image/x-icon" href="./images/favicon/favicon.png">
 
 
-    <title>Coding Hero</title>
+
+    <title>Code Camp</title>
 
 
 
@@ -34,7 +46,7 @@
 
         
           <!--  title < container < navbar -->
-          <div><a class="navbar-brand fs-3 fw-bold text-success" href="#">Coding Hero</a></div>
+          <div><a class="navbar-brand fs-3 fw-bold text-success" href="#">Coding Camp</a></div>
           
           <!--  hamburgerMenu < container < navbar -->
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -114,15 +126,15 @@
           <div class="carousel-item active">
 
             <!-- image < carousel-item < carousel -->
-            <img src="./images/cover/cover-1.png" class="d-block w-100" alt="cover-image">
+            <img src="./images/cover/cover-1.png" class="d-block w-100 position-absolute top-0 start-0" style="object-fit:cover;" alt="cover-image">
 
             <!-- image-overlay < carousel-item < carousel -->
-            <div class="carousel_img_overlay"></div>
+            <div class="position-absolute w-100 h-100 bg-black" style="opacity:65%;"></div>
 
          
 
             <!-- content < carousel-item < carousel -->
-            <div class="carousel-caption">
+            <div class="carousel-caption" style="text-shadow: 1px 1px 2px black;">
 
               <h1 class="mb-4 fs-1">Learn Web Development</h1>
 
@@ -142,12 +154,12 @@
           <!-- carousel-item < carousel < header -->
           <div class="carousel-item">
 
-            <!-- image < carousel-item < carousel -->
-            <img src="./images/cover/cover-2.jpg" class="d-block w-100" alt="cover-image">
+             <!-- image < carousel-item < carousel -->
+             <img src="./images/cover/cover-2.jpg" class="d-block w-100 position-absolute top-0 start-0" style="object-fit:cover;" alt="cover-image">
 
-            <!-- image-overlay < carousel-item < carousel -->
-            <div class="carousel_img_overlay"></div>
-
+             <!-- image-overlay < carousel-item < carousel -->
+             <div class="position-absolute w-100 h-100 bg-black" style="opacity:65%;"></div>
+ 
          
 
             <!-- content < carousel-item < carousel -->
@@ -174,10 +186,10 @@
           <div class="carousel-item">
 
             <!-- image < carousel-item < carousel -->
-            <img src="./images/cover/cover-3.jpg" class="d-block w-100" alt="cover-image">
+            <img src="./images/cover/cover-3.jpg" class="d-block w-100 position-absolute top-0 start-0" style="object-fit:cover;" alt="cover-image">
 
             <!-- image-overlay < carousel-item < carousel -->
-            <div class="carousel_img_overlay"></div>
+            <div class="position-absolute w-100 h-100 bg-black" style="opacity:65%;"></div>
 
          
 
@@ -231,7 +243,7 @@
 
           <h3 class="mb-4 fs-3">Discover Our Popular Courses</h3>
 
-          <p class="mb-5 opacity-75">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+          <p class="mb-5 opacity-75">We have more than ten courses. Check out the most popular ones.</p>
 
         </div> 
 
@@ -400,9 +412,9 @@
       <!-- caption < section-register -->
       <div class="p-3 text-lg-start text-center section-register-caption align-items-start">
 
-        <h1 class="fs-3 mb-4">Learn Web Development</h1>
+        <h1 class="fs-3 mb-4">Ready to Join?</h1>
 
-        <p class="lead ">Get access to everything you need to get started developing websites. Learn HTML, CSS and JavaScript through project-based learning.</p>
+        <p class="lead">Next batch's class will start on the next month. Register and join now to get a 10% discount!</p>
 
       </div>
 
@@ -494,8 +506,6 @@
 
 
 
-
-
     
       <!-- section-faq -->
       <section class="section-margin-top d-flex flex-column align-items-center">
@@ -514,8 +524,7 @@
 
         <!-- faq-accordions < section-faq  -->
 
-        <div class="accordion" id="accordionExample">
-
+        <div class="accordion" style="width:70%" id="accordionExample">
 
 
           <!-- faq-accordion < faq-accordions < section-faq  -->
@@ -528,7 +537,7 @@
             </h2>
 
 
-            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
 
               <div class="accordion-body fs-5 opacity-75">
                 The basic difference between CSS Grid Layout and CSS Flexbox Layout is that flexbox was designed for layout in one dimension - either a row or a column. Grid was designed for two-dimensional layout - rows, and columns at the same time. The two specifications share some common features, however, and if you have already learned how to use flexbox, the similarities should help you get to grips with Grid.
@@ -546,7 +555,7 @@
           <div class="accordion-item mb-2">
 
             <h2 class="accordion-header" id="headingTwo">
-              <button class="accordion-button fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+              <button class="accordion-button fs-5 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
                 What is the difference between bootstrap and tailwind?
               </button>
             </h2>
@@ -573,7 +582,7 @@
           <div class="accordion-item mb-2">
 
             <h2 class="accordion-header" id="headingThree">
-              <button class="accordion-button fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+              <button class="accordion-button collapsed fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
                 What is CSS Box Model?
               </button>
             </h2>
@@ -609,7 +618,7 @@
           <div class="accordion-item">
 
             <h2 class="accordion-header" id="headingFour">
-              <button class="accordion-button fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+              <button class="accordion-button collapsed fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
                 What is a semantic tag in HTML?
               </button>
             </h2>
@@ -674,6 +683,47 @@
 
     </section> <!-- End: section-trusted  -->
 
+
+
+
+
+
+    <!-- footer -->
+    <footer class="section-margin-top p-5 bg-black text-white d-flex flex-column align-items-center text-center" style="gap:1.5rem;">
+
+      <h3 class="f-3">Code Camp</h3>
+
+   
+      <p>122th Floor, 90 Bir Uttam AK Khandakar Road, Mohakhali Z/A, Dhaka 1909, Bangladesh</p>
+ 
+ 
+      <p>Privacy Ploicy  |   Terms of use</p>
+
+
+
+       <!-- social media -->
+       <div class="d-flex" style="gap:1rem;">
+
+
+     
+        <!-- facebook -->
+        <i class="bi bi-facebook"></i>
+  
+        <!-- instagram -->
+        <i class="bi bi-instagram"></i>
+
+        <!-- twitter -->
+        <i class="bi bi-twitter"></i>
+
+        <!-- github -->
+        <i class="bi bi-github"></i>
+        
+      </div>
+
+
+
+
+    </footer>
 
 
     <!-- Bootstrap Javascript -->

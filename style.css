@@ -1,102 +1,52 @@
-/* Google Font */
-@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+/* modifying  bootstrap classes */
 
-
-
-
-
- /* no custom classes, just modifying  bootstrap classes */
-
-
-
-.fs-1, .fs-3{ 
-    font-weight: 600;
-    font-family: 'Source Code Pro', monospace;
-    
-}
+  .fs-1, .fs-3{ 
+      font-weight: 600;
+      font-family: 'Source Code Pro', monospace; 
+  }
   
   .fs-1 {
     font-size: clamp( 1.75rem, 1.6634615384615385rem + 0.46153846153846156vw, 2.125rem );
 
-    /* console.log(clampBuilder(300, 1600, 28, 34)) */
   }
   
-
   .fs-3 {
-
     font-size: clamp( 1.375rem, 1.2884615384615385rem + 0.46153846153846156vw, 1.75rem );
-
-    /* console.log(clampBuilder(300, 1600, 22, 28)) */
-
   }
   
   .fs-4 {
     font-weight: 600;
     font-size: clamp( 1.1875rem, 1.1009615384615385rem + 0.46153846153846156vw, 1.5625rem ); 
-    
-
-    /* console.log(clampBuilder(300, 1600, 19, 25)) */
   }
   
-
   .fs-5{
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 400;
     font-size: clamp( 1rem, 0.9134615384615384rem + 0.46153846153846156vw, 1.375rem )
-
-    /* console.log(clampBuilder(300, 1600, 16, 22)) */
   }
 
-/* for default text (body) = fs-5, for subtitle type of small text = fs-5, opacity-75 , for header title = fs-1, for any other title = fs-3  */
-
+/* utility class */
 
 .section-margin-top {
   margin-top:6rem;
 }
 
-
-
+/* header*/
 .carousel-item{
     height: clamp( 31.25rem, 32.69230769230769rem + -7.6923076923076925vw, 25rem )
-
-    /* console.log(clampBuilder(300, 1600, 500, 400)) */
 }
-
-
 
 .carousel-caption {
     bottom: clamp( 2rem, 0.6153846153846152rem + 7.384615384615385vw, 8rem );
-    
-
-    /* console.log(clampBuilder(300, 1600, 32, 128)) */
-
-    text-shadow: 1px 1px 2px black;
 }
-
-
-
 
 .carousel-item img {
-    position: absolute;
-    top: 0;
-    left: 0;
     min-height: clamp( 31.25rem, 32.69230769230769rem + -7.6923076923076925vw, 25rem );
-    object-fit: cover;
-}
-
-
-.carousel_img_overlay{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color:  black;
-    opacity:  70%;
 }
 
 
 
-/* course card section (Writing style for only what is not possible in bootstrap and grid */
-
+/* course card section  */
 .course_cards {
     display:grid;
     gap:1.5rem;
@@ -113,12 +63,9 @@
          height:12rem;
       }
       .course_card img {
-
         width:33%;
-
       }
   }
-
 
   @media (min-width:992px) {
     .course_cards{
@@ -128,41 +75,24 @@
   }
 
 
-
   /* section-register */
-
   .section-register {
     padding: 2rem;
   }
   
-
   @media (min-width:992px) {
     .section-register{
-        width:72rem;
+        width:full;
+        padding: 2rem 7rem;
         display:grid;
-        gap:25rem;
-        grid-template-columns: 2fr 1fr;
+        gap:23rem;
+        grid-template-columns: 3fr 2fr;
         align-items: center;
-
       }
-
-    
   }
 
 
-  /* faq-section */
-  .accordion {
-
-    width: 70%;
-  }
-
-
-  .accordion-button, .accordion-button:not(.collapsed), .accordion-button::after {
-
-    background-color: transparent;
-    color: #092f6b;
-    outline-color: #092f6b;
-}
+  
 
 
 
